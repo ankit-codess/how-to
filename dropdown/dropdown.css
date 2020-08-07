@@ -1,0 +1,63 @@
+/* reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/* dropdown */
+.dropdown {
+    width: 10rem;
+    font-family: Roboto;
+}
+
+/* dropdown button */
+.dropdown-btn {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    letter-spacing: .3rem;
+    font-weight: bold;
+    background-color: rgb(10, 100, 200);
+    border: none;
+    color: #fff;
+    font-family: Roboto;
+}
+.dropdown-btn:hover, .dropdown-btn:focus {
+    background-color: rgb(10, 80, 200);
+    outline: none;
+}
+
+/* dropdown contents */
+.dropdown-contents {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: height 200ms ease-in-out;
+}
+/* links */
+.link {
+    text-decoration: none;
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+}
+.link:hover, .link:focus {
+    background-color: rgb(10, 10, 10);
+    outline: none   ;
+}
+
+/* creating dropdown effect */
+.dropdown:hover .dropdown-contents, .dropdown:focus-within .dropdown-contents {
+    height: 15rem;
+    transition: height 200ms ease-in-out;
+}
