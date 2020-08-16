@@ -1,0 +1,39 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.image-container {
+    /* add image */
+    background-image: url('./background.jpg');
+    width: 100%;
+    height: 30rem; /* 1rem = 16px */
+
+    background-size: cover;
+
+    /* place hover-text at center of image */
+    display: grid;
+    place-items: center;
+
+    /* let's create parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hover-text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.blog-post {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    width: 80%;
+    margin: 3rem auto;
+}
