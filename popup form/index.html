@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Popup form</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <ul class="navbar">
+        <li class="navbar-item logo"><a href="https://www.ankitcodes.com">ankitcodes.com</a></li>
+        <li class="navbar-item about"><a href="#">About</a></li>
+        <li class="navbar-item projects"><a href="#">Projects</a></li>
+        <li class="navbar-item blog"><a href="#">Blog</a></li>
+        <li class="navbar-item contact"><a href="#">Contact</a></li>
+        <li class="navbar-item login">
+            <button class="login-btn">Login</button>
+        </li>
+    </ul>
+
+    <!-- some contents -->
+    <div class="contents">
+        <h2>How to create popup using HTML, CSS & JS</h2>
+        <p>Click on Login Button to show popup</p>
+    </div>
+
+    <!-- popup-form -->
+    <div class="popup-container hide"></div>
+
+    <form class="popup-form hide" action="#" method="POST">
+        <h1>Login Here</h1>
+        <input class="input-field" type="email" name="email" placeholder="Email" required />
+        <input class="input-field" type="password" name="password" placeholder="Password" required />
+        <input class="input-field submit-btn" type="submit" name="submit" value="Login">
+
+        <!-- close btn -->
+        <div class="close-btn">&times;</div>
+    </form>
+
+    <script src="./popup-effect.js"></script>
+</body>
+</html>
