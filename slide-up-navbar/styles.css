@@ -1,0 +1,56 @@
+/* reset default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------- */
+
+
+/* styling navbar-container section */
+
+.navbar-container {
+    font-family: Roboto;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    transition: top 300ms ease-in-out;
+}
+
+.logo {
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(0, 80, 184);
+}
+
+.navbar-item a {
+    color: #fff;
+    display: flex;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.navbar-item a:hover, .navbar-item a:focus {
+    background-color: rgb(2, 55, 124);
+}
+
+/* ------------------------------- */
+
+/* styling content section */
+
+.content {
+    padding: 1rem;
+    margin-top: 7rem;
+    font-family: Roboto;
+    height: 120vh; /* so that we could scroll */
+}
+
+/* ---------------------- */
